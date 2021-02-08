@@ -56,7 +56,7 @@ const options2=[{key:'ax' ,value:'ax' ,text:'123'} ,{key:'bx',value:'bx',text:'1
             <Segment stacked style={{padding:15 ,minHeight:680,backgroundColor:'#f8f8f8'}}>
                <h2 style={{color:'teal'}}>Add Update Inventory!!</h2>
                <Divider/>
-               <Form style={{textAlign:'left'}}>
+               <Form style={{textAlign:'left'}} onSubmit={formik.handleSubmit}>
        <Form.Field
                 control={Select}
                 fluid
@@ -131,7 +131,7 @@ const options2=[{key:'ax' ,value:'ax' ,text:'123'} ,{key:'bx',value:'bx',text:'1
                 type="text"
                 label="Description"
                 name='description'
-                placeholder="enter..."
+                placeholder="Enter..."
                 onBlur={formik.handleBlur}
                 value={formik.values.description}
                 error={
@@ -195,8 +195,7 @@ const options2=[{key:'ax' ,value:'ax' ,text:'123'} ,{key:'bx',value:'bx',text:'1
               />
               </Grid.Column>
               </Grid>
-              
-              <label>Upload File</label><br/>
+              <br/><label><b> Upload File</b></label>
               <Form.Group>
               <Form.Field
                 control={Input}
@@ -211,7 +210,7 @@ const options2=[{key:'ax' ,value:'ax' ,text:'123'} ,{key:'bx',value:'bx',text:'1
                     : null
                 }
               /><Button>Browse</Button></Form.Group>
-              <label>Upload Product Picture</label>
+              <label><b>Upload Product Picture</b></label>
               <Form.Group>
                <Form.Field
                 control={Input}
@@ -228,9 +227,9 @@ const options2=[{key:'ax' ,value:'ax' ,text:'123'} ,{key:'bx',value:'bx',text:'1
                 
               /><Button>Browse</Button></Form.Group>
 
-      </Form>
       <Divider style={{marginBottom:2}}/>
-      <Button style={{float:'right',marginRight:10,}} color='teal' >Add+</Button>
+      <Button style={{float:'right',marginRight:10,}} color='teal' type='submit' >Add+</Button>
+      </Form>
       </Segment>
             </Grid.Column>
         </Grid>    
