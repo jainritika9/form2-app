@@ -52,8 +52,8 @@ class Forms extends React.Component{
         render={({ errors, status, touched }) => (
         <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
             <Grid.Column style={{ maxWidth: 500}}>
-            <Segment stacked style={{padding: 2 ,backgroundColor:'#f8f8f8'}}>
-               <h2 style={{color:'brown'}}>Add Update Inventory!!</h2>
+            <Segment stacked style={{padding: 2 ,height:650,backgroundColor:'#f8f8f8'}}>
+               <h2 style={{color:'teal'}}>Add Update Inventory!!</h2>
                <Divider/>
                <Form style={{textAlign:'left'}}>
                 <div class="form" style={{padding:10}}>
@@ -119,6 +119,8 @@ class Forms extends React.Component{
                 </div>
                 </div>
                </Form>
+               <Divider style={{marginBottom:2}}/>
+               <Button style={{float:'right',marginRight:10,}} color='teal' >Add+</Button>
             </Segment>
             </Grid.Column>
         </Grid>     
